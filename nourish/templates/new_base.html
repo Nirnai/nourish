@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+    <meta name="author" content="Nirnai Rao">
+
+    <!--  !-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/new_style.css' %}">
+
+    <!-- include google font Lato and font-awsome icons (social media) !-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="site-container">
+
+        <header class="site-header">
+
+            <div class="title-area">
+
+                <h1 class="main-title"><a href="{% url 'home' %}">Nourish</a></h1>
+                <h2 class="sub-title">Holistic Nutrition</h2>
+
+            </div>
+
+            <div class="social-media">
+                <ul>
+                    <li class="social-icons"><a href="#"><i class="fa fa-lg fa-envelope"></i></a></li>
+                    <li class="social-icons"><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                    <li class="social-icons"><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+                    <li class="social-icons"><a href="#"><i class="fa fa-lg fa-google"></i></a></li>
+                    <li class="social-icons"><a href="#"><i class="fa fa-lg fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li class="nav-item"> <a href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="#">Consultations</a></li>
+                            <li class="sub-item"><a href="#">Personal Shopping</a></li>
+                            <li class="sub-item"><a href="#">Nutritional Workshops</a></li>
+                            <li class="sub-item"><a href="#">Catering</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="/pages/about">About</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="/pages/team">Meet our Team</a></li>
+                            <li class="sub-item"><a href="/pages/philosophy">Our Philosophy</a></li>
+                            <li class="sub-item"><a href="/pages/whatwedo">What we do</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="#">Eating for health</a></li>
+                            <li class="sub-item"><a href="#">Healthy living</a></li>
+                            <li class="sub-item"><a href="#">Recommended Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        {% block content %} {% endblock %}
+
+        <footer class="site-footer">
+            <div class="sign-up">
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li class="link-item"><a href="#">Legal</a></li>
+                    <li class="link-item"><a href="#">Terms & Conditions</a></li>
+                    <li class="link-item"><a href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+
+                <p class="link-item"> <a href="#">Copyright</a></p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

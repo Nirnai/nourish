@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+
+
+</head>
+
+<body>
+    <div class="site-container">
+        <header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
+            <div class="wrap">
+                <div class="title-area">
+                    <h1 class="site-title" itemprop="headline"><a href="{% url 'home' %}">Nourish</a></h1>
+                    <h2 class="site-description" itemprop="description">Food Wellness</h2>
+                </div>
+            </div>
+
+            <div class="widget-area">
+                <section id="nav_menu-1" class="widget widget_nav_menu">
+                    <div class="widget-wrap">
+                        <nav class="nav-header" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <ul id="menu-primary-navigation" class="menu genesis-nav-menu">
+                                <li class="menu-item"><a href="{% url 'home' %}" itemprop="url"><span itemprop="name">Home</span></a></li>
+                                <li class="menu-item"><a href="header.html" itemprop="url"><span itemprop="name">Services</span></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Consultations</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Personal Shopping</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Nutritional Workshops</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Catering</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="/pages/about" itemprop="url"><span itemprop="name">About</span></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Meet the Team</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Out Philosophy</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">What We Do</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="header.html" itemprop="url"><span itemprop="name">Blog</span></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Eating for Health</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Healthy Living</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Recommended Products</span></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="header.html" itemprop="url"><span itemprop="name">Social Media Feeds</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="header.html" itemprop="url"><span itemprop="name">Testimonials</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        {% block content %} {% endblock %}
+
+        <footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+            <div class="wrap">
+                <div class="creds">
+                    <p><a href="header.html">Legal</a> | <a href="header.html">Terms & Conditions</a> | <a href="{% url 'contact' %}">Contact</a> </p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
