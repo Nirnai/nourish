@@ -182,23 +182,85 @@ a {
     min-height: 150px;
 }
 
+.footer-title {
+    margin: 0 auto;
+    padding: 70px 20px 5px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    margin: 0 auto;
+    padding: 5px 20px 50px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: .3px;
+    text-align: center;
+    color: #777;
+}
+
 .sign-up {
-    height: 100px;
+    padding: 10px;
+    text-align: center;
+    /*border-top: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+
+.sign-up-item {
+    display: inline-block;
+}
+
+.input-field {
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(220, 220, 220, 0.5);
+    color: #777;
+}
+
+.submit-button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .footer-links {
+    margin: 20px;
+    padding: 50px;
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .link-item {
+    padding: 20px 10px;
     display: inline-block;
-    margin: 10px 20px 10px 20px;
+    margin: 10px;
 }
 
 .link-item a {
     font-family: 'open-sans';
+    color: #777;
+}
+
+.link-item a:hover {
+    color: #afcf58;
+}
+
+.copyright a {
+    font-family: 'open-sans';
+    font-size: 12.5px;
+    opacity: .5;
     color: #777;
 }
 
